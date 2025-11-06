@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCM Tancredo de Almeida Neves - Colégio Cívico-Militar</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a2a46;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #6b8e23;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 150px;
+}
+
+nav {
+    background-color: #1c3656;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #6b8e23;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #1a2a46;
+    border-bottom: 2px solid #6b8e23;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* EVENTOS */
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.evento {
+    flex: 1 1 300px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.evento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.evento h3 {
+    color: #1a2a46;
+    margin: 10px 0 5px;
+}
+
+.evento p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* GALERIA SLIDE MANUAL */
+.slide-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide .legenda {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.botao-anterior, .botao-proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+.botao-anterior:hover, .botao-proximo:hover {
+    background: rgba(107,142,35,0.8);
+}
+
+.botao-anterior { left: 20px; }
+.botao-proximo { right: 20px; }
+
+footer {
+    background-color: #1a2a46;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="brasao_cpmpr270.png" alt="Logo CCM Tancredo de Almeida Neves" class="logo">
+    <h1>Colégio Cívico-Militar Tancredo de Almeida Neves</h1>
+    <p>Do Governo do Paraná</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="sobre">
+        <h2>Sobre a Escola</h2>
+        <p>O Colégio Cívico-Militar Tancredo de Almeida Neves, pertencente à rede de ensino do Governo do Paraná, foi fundado com a missão de oferecer uma educação de excelência, pautada em valores cívicos e militares. Nosso objetivo é formar cidadãos conscientes, disciplinados e preparados para os desafios do futuro, combinando o rigor acadêmico com o desenvolvimento de caráter e responsabilidade social.</p>
+    </section>
+
+    <section id="eventos">
+        <h2>Notícias e Eventos</h2>
+        <div class="eventos">
+            <div class="evento">
+                <img src="interclasse.jpg" alt="Interclasse">
+                <h3>Interclasse</h3>
+                <p>Realizado em 11 de abril — um momento de integração e esportividade entre os alunos.</p>
+            </div>
+            <div class="evento">
+                <img src="festajulina.jpg" alt="Festa Julina">
+                <h3>Festa Julina</h3>
+                <p>22 de julho — uma tradicional celebração com comidas típicas e apresentações culturais.</p>
+            </div>
+            <div class="evento">
+                <img src="festafantasia.jpg" alt="Festa Fantasia">
+                <h3>Festa Fantasia</h3>
+                <p>31 de outubro — alunos e professores participaram com trajes criativos e divertidos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <p style="text-align:center;color:#666;">Conheça um pouco mais do nosso colégio através das imagens que capturam nossos momentos especiais.</p>
+        <div class="slide-container">
+            <div class="slide"><img src="IMG_9225.jpg"><div class="legenda">Atividades escolares</div></div>
+            <div class="slide"><img src="IMG_9226.jpg"><div class="legenda">Aula em laboratório de informática</div></div>
+            <div class="slide"><img src="IMG_9239.jpg"><div class="legenda">Sala dos monitores</div></div>
+            <div class="slide"><img src="IMG_9281.jpg"><div class="legenda">Quadra Esportiva</div></div>
+            <div class="slide"><img src="IMG_9282.jpg"><div class="legenda">Quadra de Vôlei</div></div>
+            <div class="slide"><img src="IMG_9296.jpg"><div class="legenda">Cozinha</div></div>
+            <div class="slide"><img src="IMG_9297.jpg"><div class="legenda">Refeitório</div></div>
+            <div class="slide"><img src="IMG_9283.jpg"><div class="legenda">Cantina</div></div>
+            <div class="slide"><img src="IMG_9313.jpg"><div class="legenda">Frente da escola</div></div>
+            <div class="slide"><img src="IMG_9291.jpg"><div class="legenda">Pátio</div></div>
+            <div class="slide"><img src="IMG_9327.jpg"><div class="legenda">Laboratório de Informática</div></div>
+            <div class="slide"><img src="diretoria.jpg"><div class="legenda">Diretoria</div></div>
+            <div class="slide"><img src="IMG_9207.jpg"><div class="legenda">Pedagogia</div></div>
+            <div class="slide"><img src="pedagogia.jpg"><div class="legenda">Pedagogia 2</div></div>
+            <div class="slide"><img src="professores.jpg"><div class="legenda">Sala dos Professores</div></div>
+            <div class="slide"><img src="IMG_9308.jpg"><div class="legenda">Livraria</div></div>
+            <div class="slide"><img src="IMG_9215.jpg"><div class="legenda">Obra dos Girassóis</div></div>
+            <div class="slide"><img src="IMG_9211.jpg"><div class="legenda">Certificados da Escola</div></div>
+            <div class="slide"><img src="IMG_9219.jpg"><div class="legenda">Monitor controlando a saída</div></div>
+            <div class="slide"><img src="IMG_9280.jpg"><div class="legenda">Secretaria</div></div>
+            <div class="slide"><img src="IMG_9310.jpg"><div class="legenda">Interior da secretaria</div></div>
+
+
+
+
+
+
+
+            <a class="botao-anterior" onclick="mudarSlide(-1)">&#10094;</a>
+            <a class="botao-proximo" onclick="mudarSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (45) 3578-3477</p>
+        <p><strong>Endereço:</strong> Rua Jose Carlos Pace, 1866 Morumbi II.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 CCM Tancredo de Almeida Neves. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+let slideIndex = 1;
+mostrarSlide(slideIndex);
+
+function mudarSlide(n) {
+    mostrarSlide(slideIndex += n);
+}
+
+function mostrarSlide(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
